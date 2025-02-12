@@ -1,9 +1,7 @@
 package netflix;
-
 import java.util.*;
 
 class Movie {
-    
 	String title;
     String genre;
     int watchTime;
@@ -40,7 +38,7 @@ class User {
         
         String favoriteGenre = Collections.max(genreCount.entrySet(), Map.Entry.comparingByValue()).getKey();
         
-        System.out.println("Most Watched Genre" + favoriteGenre);
+        System.out.println("Most Watched Genre " + favoriteGenre);
         
         System.out.println("Recommended Movies");
         
@@ -64,7 +62,7 @@ public class netflix {
             new Movie("Interstellar", "Sci-Fi", 150)
         );
         
-        System.out.print("Enter Your Name" );
+        System.out.print("Enter Your Name " );
         User user = new User(scanner.nextLine());
         
         while (true) {
